@@ -6,7 +6,7 @@ import { Fragment } from "react";
 
 const Home: NextPage = () => {
   return (
-    <Fragment>
+    <div className="content">
       <Head>
         <title>Ruben&apos;s, Frontend Developer</title>
         <meta content="description" name="Ruben's Portfolio Page" />
@@ -18,14 +18,14 @@ const Home: NextPage = () => {
             <Spacer />
             <Image
               src="/public/magruu.jpg"
-              alt="a drawing of me, with glasses and dark blue clothes"
-              width="800"
-              height="800"
+              alt="una foto mia"
+              width={10}
+              height={10}
             />
           </Flex>
         </section>
       </main>
-    </Fragment>
+    </div>
   );
 };
 
