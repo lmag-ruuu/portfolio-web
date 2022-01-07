@@ -8,7 +8,10 @@ const Navbar: FC = () => {
   return (
     <header className={classes.navheader}>
       <Flex align="center" p={8}>
-        <span>Ruben&apos;s</span>
+        <span className={classes.myName}>
+          Ruben&apos;s <br />
+          Front-End Developer
+        </span>
         <Spacer />
         <Flex gap={12}>
           <NavLink href="/">Home</NavLink>

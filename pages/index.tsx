@@ -1,5 +1,7 @@
+import { Flex, Spacer, Heading } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import { Fragment } from "react";
 
 const Home: NextPage = () => {
@@ -10,7 +12,18 @@ const Home: NextPage = () => {
         <meta content="description" name="Ruben's Portfolio Page" />
       </Head>
       <main>
-        <section>Hola, sex?</section>
+        <section>
+          <Flex>
+            <Heading>Adelante amigues</Heading>
+            <Spacer />
+            <Image
+              src="/public/magruu.jpg"
+              alt="a drawing of me, with glasses and dark blue clothes"
+              width="800"
+              height="800"
+            />
+          </Flex>
+        </section>
       </main>
     </Fragment>
   );
