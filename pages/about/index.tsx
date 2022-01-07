@@ -2,18 +2,18 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Fragment } from "react";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <Fragment>
       <Head>
         <title>Ruben&apos;s, Frontend Developer</title>
-        <meta content="description" name="Ruben's Portfolio Page" />
+        <meta content="description" name="Ruben's Portfolio about page" />
       </Head>
       <main>
-        <section>Hola, sex?</section>
+        <section>aqui va el sobremi o.O</section>
       </main>
     </Fragment>
   );
 };
 
-export default Home;
+export default About;
