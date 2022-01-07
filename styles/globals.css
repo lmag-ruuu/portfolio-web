@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 } */
+a[aria-current] {
+  color: red;
+  font-weight: bold;
+  border-bottom: 2px solid red;
+}
+
+a:hover {
+  color: tomato;
+}

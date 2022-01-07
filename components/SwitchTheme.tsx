@@ -1,16 +1,6 @@
-import {
-  useColorMode,
-  Switch,
-  Flex,
-  Button,
-  IconButton,
-} from "@chakra-ui/react";
-
+import { useColorMode, Flex, IconButton } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-
-import { useState, FC } from "react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import NextLink from "next/link";
+import { FC } from "react";
 
 const SwitchTheme: FC = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -22,11 +12,6 @@ const SwitchTheme: FC = () => {
         aria-label="Swith theme"
         icon={isDark ? <MoonIcon /> : <SunIcon />}
       />
-      {/* <Switch
-        color="green"
-        isChecked={isDark}
-        onChange={toggleColorMode}
-      ></Switch> */}
     </Flex>
   );
 };
