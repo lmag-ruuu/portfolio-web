@@ -6,24 +6,26 @@ import { Fragment } from "react";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <Fragment>
       <Head>
         <title>Ruben&apos;s, Frontend Developer</title>
         <meta content="description" name="Ruben's Portfolio Page" />
       </Head>
       <main>
         <section>
-          <Heading>Adelante amigues</Heading>
-          <Spacer />
-          <Image
-            src="/public/magruu.jpg"
-            alt="una foto mia"
-            width={10}
-            height={10}
-          />
+          <Flex>
+            <Heading>Adelante amigues</Heading>
+            <Spacer />
+            <Image
+              src={"/magruu.jpg"}
+              alt="a drawing of me, with glasses and dark blue clothes"
+              width="800px"
+              height="800px"
+            />
+          </Flex>
         </section>
       </main>
-    </>
+    </Fragment>
   );
 };
 
