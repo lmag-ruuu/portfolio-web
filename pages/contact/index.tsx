@@ -4,7 +4,7 @@ import { Fragment } from "react";
 
 const Contact: NextPage = () => {
   return (
-    <div className="content">
+    <>
       <Head>
         <title>Ruben&apos;s, Frontend Developer</title>
         <meta content="description" name="Ruben's Portfolio contact page" />
@@ -12,7 +12,7 @@ const Contact: NextPage = () => {
       <main>
         <section>aqui va un formulario cumbion bien loco</section>
       </main>
-    </div>
+    </>
   );
 };
 
