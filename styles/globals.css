@@ -4,11 +4,11 @@
 }
 
 a[aria-current] {
-  color: red;
+  color: tomato;
   font-weight: bold;
-  border-bottom: 2px solid red;
 }
 
 a:hover {
   color: tomato;
+  box-shadow: 0px 2px 0px tomato;
 }

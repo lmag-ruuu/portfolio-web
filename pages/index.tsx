@@ -12,18 +12,16 @@ const Home: NextPage = () => {
         <meta content="description" name="Ruben's Portfolio Page" />
       </Head>
       <main>
-        <section>
-          <Flex>
-            <Heading>Adelante amigues</Heading>
-            <Spacer />
-            <Image
-              src={"/magruu.jpg"}
-              alt="a drawing of me, with glasses and dark blue clothes"
-              width="800px"
-              height="800px"
-            />
-          </Flex>
-        </section>
+        <Flex>
+          <Heading>Adelante amigues</Heading>
+          <Spacer />
+          <Image
+            src={"/magruu.jpg"}
+            alt="a drawing of me, with glasses and dark blue clothes"
+            width="600px"
+            height="600px"
+          />
+        </Flex>
       </main>
     </Fragment>
   );
