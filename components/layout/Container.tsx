@@ -2,7 +2,14 @@ import React from "react";
 import Navbar from "../Navigation/Navbar";
 import Footer from "../Footer/Footer";
 import Head from "next/head";
-import { Container, ContainerProps, VStack } from "@chakra-ui/react";
+import {
+  Container,
+  ContainerProps,
+  VStack,
+  useColorMode,
+} from "@chakra-ui/react";
+import BackgroundDark from "./BackgroundDark";
+import BackgroundLight from "./BackgroundLight";
 
 type ContainerLayoutProps = {
   children: React.ReactNode;
@@ -13,6 +20,7 @@ const ContainerLayout = ({
   maxW = "container.xl",
   children,
 }: ContainerLayoutProps) => {
+  const { colorMode, setColorMode } = useColorMode();
   return (
     <VStack spacing={4} align="stretch">
       <Head>
@@ -22,6 +30,7 @@ const ContainerLayout = ({
       <Navbar />
       <Container maxW={maxW}>{children}</Container>
       <Footer />
+      {colorMode === "dark" ? <BackgroundDark /> : <BackgroundLight />}
     </VStack>
   );
 };
