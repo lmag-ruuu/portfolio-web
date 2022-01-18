@@ -20,9 +20,7 @@ const ContainerLayout = ({
         <title>Ruben&apos; Web</title>
       </Head>
       <Navbar />
-      <Container maxW={maxW} pt={14}>
-        {children}
-      </Container>
+      <Container maxW={maxW}>{children}</Container>
       <Footer />
     </VStack>
   );
