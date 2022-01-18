@@ -15,7 +15,7 @@ export default function Home() {
   const [isLargerThan767] = useMediaQuery("(max-width: 767px)");
   const { colorMode } = useColorMode();
   const color = colorMode === "dark" ? "#1864ab" : "#5c940d";
-  const lineColor = colorMode === "dark" ? "#1864ab" : "#d8f5a2";
+  const lineColor = colorMode === "dark" ? "#1864ab" : "#5c940d";
   const textColor = colorMode === "dark" ? "#e9ecef" : "#343a40";
   const paddingTop = isLargerThan767 ? 70 : 0;
   return (
@@ -54,7 +54,11 @@ export default function Home() {
               A self-taught frontend developer
             </Text>{" "}
           </Heading>
-          <Text fontSize={{ base: "md", lg: "lg" }} color={textColor}>
+          <Text
+            fontWeight={"bold"}
+            fontSize={{ base: "md", lg: "lg" }}
+            color={textColor}
+          >
             I am a very passionate person, I like music, video games,
             programming, pokémon, I am someone curious who is always learning
             something new, I do web development with react, typescript and

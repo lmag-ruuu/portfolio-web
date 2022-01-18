@@ -44,7 +44,7 @@ export default function WithAction() {
           }}
         >
           <Link passHref href="/">
-            Welcome
+            Home
           </Link>
         </Text>
         <IconButton
