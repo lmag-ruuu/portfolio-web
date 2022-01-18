@@ -9,18 +9,28 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 
+import Technologies from "../components/componentsHome/Technologies";
+
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
   const color = colorMode === "dark" ? "#1864ab" : "#5c940d";
   const lineColor = colorMode === "dark" ? "#1864ab" : "#d8f5a2";
+  const textColor = colorMode === "dark" ? "#e9ecef" : "#343a40";
   return (
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
-      <Flex p={1} flex={1} align={"center"} justify={"center"}>
+      <Flex
+        pl={"10vh"}
+        pr={"10vh"}
+        flex={1}
+        align={"center"}
+        justify={"center"}
+      >
         <Stack spacing={1} w={"full"} maxW={"lg"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text
               as={"span"}
               position={"relative"}
+              color={textColor}
               _after={{
                 content: "''",
                 width: "full",
@@ -39,15 +49,13 @@ export default function Home() {
               A self-taught frontend developer
             </Text>{" "}
           </Heading>
-          <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
+          <Text fontSize={{ base: "md", lg: "lg" }} color={textColor}>
             I am a very passionate person, I like music, video games,
             programming, pokémon, I am someone curious who is always learning
             something new, I do web development with react, typescript and
             believe it or not, I like javascript.
           </Text>
-          <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-            <Text>TECNOLOGIAS</Text>
-          </Stack>
+          <Technologies />
         </Stack>
       </Flex>
       <Flex flex={1} align={"center"} justify={"center"}>
@@ -56,7 +64,7 @@ export default function Home() {
           boxSize="600px"
           objectFit={"cover"}
           src={"https://i.imgur.com/c29l9om.jpg"}
-          borderTopRadius={"45%"}
+          borderRadius={"46% 54% 37% 63% / 80% 68% 32% 20%  "}
         />
       </Flex>
     </Stack>

@@ -8,6 +8,7 @@ import {
   VStack,
   useColorMode,
 } from "@chakra-ui/react";
+import { Portal } from "@chakra-ui/react";
 import BackgroundDark from "./BackgroundDark";
 import BackgroundLight from "./BackgroundLight";
 
@@ -30,7 +31,9 @@ const ContainerLayout = ({
       <Navbar />
       <Container maxW={maxW}>{children}</Container>
       <Footer />
-      {colorMode === "dark" ? <BackgroundDark /> : <BackgroundLight />}
+      <Portal>
+        {colorMode === "dark" ? <BackgroundDark /> : <BackgroundLight />}
+      </Portal>
     </VStack>
   );
 };

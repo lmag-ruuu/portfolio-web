@@ -22,6 +22,7 @@ const Link: FC<{ children: ReactNode; href: string }> = (props) => {
   return (
     <NextLink passHref href={props.href}>
       <ChakraLink
+        color={colorMode === "dark" ? "#e9ecef" : "#343a40"}
         px={8}
         py={3}
         fontWeight={"bold"}
