@@ -1,17 +1,37 @@
-import { FC } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import classes from "./NavLink.module.css";
+import {
+  Link as ChakraLink,
+  useColorMode,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import NextLink from "next/link";
+import { FC, ReactNode } from "react";
 
-const NavLink: FC<{ href: string }> = (props) => {
-  const { asPath } = useRouter();
-  const ariaCurrent = props.href === asPath ? "page" : undefined;
+const Link: FC<{ children: ReactNode; href: string }> = (props) => {
+  const { colorMode, setColorMode } = useColorMode();
+  const darkBtn = {
+    textDecoration: "none",
+    bg: useColorModeValue("#212529", "#212529"),
+    color: "#1864ab",
+  };
+  const lightBtn = {
+    textDecoration: "none",
+    bg: useColorModeValue("#f8f9fa", "#f8f9fa"),
+    color: "#5c940d",
+  };
 
   return (
-    <Link href={props.href}>
-      <a aria-current={ariaCurrent}>{props.children}</a>
-    </Link>
+    <NextLink passHref href={props.href}>
+      <ChakraLink
+        px={8}
+        py={3}
+        fontWeight={"bold"}
+        rounded={"md"}
+        _hover={colorMode === "dark" ? darkBtn : lightBtn}
+      >
+        {props.children}
+      </ChakraLink>
+    </NextLink>
   );
 };
 
-export default NavLink;
+export default Link;

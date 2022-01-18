@@ -1,16 +1,89 @@
-import { FC } from "react";
-import { Flex, Spacer } from "@chakra-ui/react";
+import {
+  Box,
+  chakra,
+  Container,
+  Stack,
+  Text,
+  useColorModeValue,
+  VisuallyHidden,
+} from "@chakra-ui/react";
+import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { ReactNode } from "react";
 
-const Footer: FC = () => {
+const SocialButton = ({
+  children,
+  label,
+  href,
+}: {
+  children: ReactNode;
+  label: string;
+  href: string;
+}) => {
   return (
-    <Flex align="center" p={4}>
-      <span>&copy;lMag-Ruu. All Rights Reserved.</span>
-      <Spacer />
-      <span>Developed by Ruben Perozo</span>
-      <Spacer />
-      <span>Redes sociales aqui xd</span>
-    </Flex>
+    <chakra.button
+      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+      rounded={"full"}
+      w={8}
+      h={8}
+      cursor={"pointer"}
+      as={"a"}
+      href={href}
+      display={"inline-flex"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      transition={"background 0.3s ease"}
+      _hover={{
+        bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
+      }}
+    >
+      <VisuallyHidden>{label}</VisuallyHidden>
+      {children}
+    </chakra.button>
   );
 };
 
-export default Footer;
+export default function SmallWithSocial() {
+  return (
+    <Box
+      bg={useColorModeValue("gray.50", "gray.900")}
+      color={useColorModeValue("gray.700", "gray.200")}
+    >
+      <Container
+        as={Stack}
+        maxW={"6xl"}
+        py={4}
+        direction={{ base: "column", md: "row" }}
+        spacing={4}
+        justify={{ base: "center", md: "space-between" }}
+        align={{ base: "center", md: "center" }}
+      >
+        <Text>
+          &copy; 2022 With love,{" "}
+          <Text
+            display={"inline"}
+            padding={1}
+            rounded={2}
+            _hover={{
+              textDecoration: "none",
+              bg: useColorModeValue("#e7f5ff", "#e7f5ff"),
+              color: "#1864ab",
+            }}
+          >
+            Ruben Magdiel
+          </Text>
+        </Text>
+        <Stack direction={"row"} spacing={6}>
+          <SocialButton label={"Twitter"} href={"#"}>
+            <FaTwitter />
+          </SocialButton>
+          <SocialButton label={"YouTube"} href={"#"}>
+            <FaYoutube />
+          </SocialButton>
+          <SocialButton label={"Instagram"} href={"#"}>
+            <FaInstagram />
+          </SocialButton>
+        </Stack>
+      </Container>
+    </Box>
+  );
+}
