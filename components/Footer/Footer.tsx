@@ -4,11 +4,13 @@ import {
   Container,
   Stack,
   Text,
+  useColorMode,
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
+import MyName from "./MyName";
 
 const SocialButton = ({
   children,
@@ -43,6 +45,8 @@ const SocialButton = ({
 };
 
 export default function SmallWithSocial() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const textName = colorMode === "dark" ? "#1864ab" : "#087f5b";
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
@@ -59,17 +63,8 @@ export default function SmallWithSocial() {
       >
         <Text>
           &copy; 2022 With love,{" "}
-          <Text
-            display={"inline"}
-            padding={1}
-            rounded={2}
-            _hover={{
-              textDecoration: "none",
-              bg: useColorModeValue("#e7f5ff", "#e7f5ff"),
-              color: "#1864ab",
-            }}
-          >
-            Ruben Magdiel
+          <Text display={"inline"} fontWeight={700} padding={1} rounded={2}>
+            <MyName />
           </Text>
         </Text>
         <Stack direction={"row"} spacing={6}>

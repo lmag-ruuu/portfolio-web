@@ -1,0 +1,45 @@
+.myName {
+  display: inline;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.myName span {
+  transition: 0.5s linear;
+}
+.myName:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+.myName:hover span:nth-child(1):after {
+  content: "'";
+}
+.myName:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+.myName:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+.myNameLight {
+  display: inline;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.myNameLight span {
+  transition: 0.5s linear;
+}
+.myNameLight:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+.myNameLight:hover span:nth-child(1):after {
+  content: "'";
+}
+.myNameLight:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+.myNameLight:hover span {
+  color: #333;
+  text-shadow: 0 0 10px #333, 0 0 20px #333, 0 0 40px #333;
+}
