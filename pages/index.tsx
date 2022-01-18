@@ -1,5 +1,4 @@
 import {
-  Button,
   Flex,
   Heading,
   Image,
@@ -7,15 +6,18 @@ import {
   Text,
   useBreakpointValue,
   useColorMode,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 import Technologies from "../components/componentsHome/Technologies";
 
 export default function Home() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const [isLargerThan767] = useMediaQuery("(max-width: 767px)");
+  const { colorMode } = useColorMode();
   const color = colorMode === "dark" ? "#1864ab" : "#5c940d";
   const lineColor = colorMode === "dark" ? "#1864ab" : "#d8f5a2";
   const textColor = colorMode === "dark" ? "#e9ecef" : "#343a40";
+  const paddingTop = isLargerThan767 ? 70 : 0;
   return (
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
       <Flex
@@ -26,7 +28,10 @@ export default function Home() {
         justify={"center"}
       >
         <Stack spacing={1} w={"full"} maxW={"lg"}>
-          <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+          <Heading
+            fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+            pt={paddingTop}
+          >
             <Text
               as={"span"}
               position={"relative"}
@@ -42,7 +47,7 @@ export default function Home() {
                 zIndex: -1,
               }}
             >
-              Hi, i&apos; Magdiel
+              Hi, I&apos;m Magdiel
             </Text>
             <br />{" "}
             <Text fontSize={28} color={color} as={"span"}>

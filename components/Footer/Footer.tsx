@@ -2,13 +2,14 @@ import {
   Box,
   chakra,
   Container,
+  Link,
   Stack,
   Text,
   useColorMode,
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { ReactNode } from "react";
 import MyName from "./MyName";
 
@@ -46,7 +47,8 @@ const SocialButton = ({
 
 export default function SmallWithSocial() {
   const { colorMode, toggleColorMode } = useColorMode();
-  const textName = colorMode === "dark" ? "#1864ab" : "#087f5b";
+  const iconColor = colorMode === "dark" ? "#1864ab" : "#087f5b";
+  const hoverColor = colorMode === "dark" ? "#087f5b" : "#1864ab";
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
@@ -62,21 +64,15 @@ export default function SmallWithSocial() {
         align={{ base: "center", md: "center" }}
       >
         <Text>
-          &copy; 2022 With love,{" "}
+          &copy; <strong>2022</strong> With love.{" "}
           <Text display={"inline"} fontWeight={700} padding={1} rounded={2}>
             <MyName />
           </Text>
         </Text>
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"#"}>
-            <FaTwitter />
-          </SocialButton>
-          <SocialButton label={"YouTube"} href={"#"}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={"Instagram"} href={"#"}>
-            <FaInstagram />
-          </SocialButton>
+          <Link href="https://github.com/lmag-ruuu/portfolio-web" isExternal>
+            <FaGithub color={iconColor} size={35} />
+          </Link>
         </Stack>
       </Container>
     </Box>

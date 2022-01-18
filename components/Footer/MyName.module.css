@@ -17,8 +17,8 @@
   margin-left: 30px;
 }
 .myName:hover span {
-  color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  color: #74c0fc;
+  text-shadow: 0 0 10px #74c0fc, 0 0 20px #74c0fc, 0 0 40px #74c0fc;
 }
 
 .myNameLight {
@@ -40,6 +40,6 @@
   margin-left: 30px;
 }
 .myNameLight:hover span {
-  color: #333;
-  text-shadow: 0 0 10px #333, 0 0 20px #333, 0 0 40px #333;
+  color: #5c940d;
+  text-shadow: 0 0 10px #5c940d, 0 0 20px #5c940d, 0 0 40px #5c940d;
 }
