@@ -10,7 +10,7 @@ const Certificates = [
   },
   {
     id: "freecodecampHTML",
-    link: "#",
+    link: "https://www.freecodecamp.org/certification/fcc19390ed1-dc5f-4303-94ce-e310e3348d9c/responsive-web-design",
     img: "https://i.imgur.com/WQFuhua.png",
     tags: "freecodecamp",
     title: "Responsive Web Design",
@@ -19,7 +19,7 @@ const Certificates = [
   },
   {
     id: "freecodecampJS",
-    link: "#",
+    link: "https://www.freecodecamp.org/certification/fcc19390ed1-dc5f-4303-94ce-e310e3348d9c/javascript-algorithms-and-data-structures",
     img: "https://i.imgur.com/9MuP2Eu.png",
     tags: "freecodecamp",
     title: "JavaScript Algorithms and Data Structures",
@@ -28,7 +28,7 @@ const Certificates = [
   },
   {
     id: "udemyJS",
-    link: "#",
+    link: "https://www.udemy.com/certificate/UC-be4ea89f-a113-4225-a963-1e65ac8191db/",
     img: "https://i.imgur.com/7bpf2h7.jpg",
     tags: "udemy",
     title: "React - The Complete Guide",
