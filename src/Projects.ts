@@ -27,7 +27,7 @@ const Projects = [
     image: "https://i.imgur.com/HsVMfpb.jpg",
     technology: ["nextjs", "chakra", "typescript"],
     title: "Portfolio",
-    link: "#",
+    link: "https://github.com/lmag-ruuu/portfolio-web",
     description:
       "One of my biggest projects, here I put into practice many things I have learned throughout my courses.",
   },
@@ -36,7 +36,7 @@ const Projects = [
       "https://i.picsum.photos/id/896/600/600.jpg?hmac=Wq1oWSmP86R1o9b5kEmaUldvNKpz1HH_f1aZsN00b74",
     technology: ["typescript", "nextjs", "css"],
     title: "Meetups",
-    link: "#",
+    link: "https://nextjs-meetup-demo-five.vercel.app/",
     description:
       "A small application for adding and viewing descriptions of well-known places. For this project only use module.css",
   },
