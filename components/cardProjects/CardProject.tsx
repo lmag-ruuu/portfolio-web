@@ -1,13 +1,16 @@
 import {
-  Flex,
   Box,
   Image,
   Badge,
   useColorModeValue,
   Icon,
-  chakra,
-  Tooltip,
   Link,
+  Flex,
+  Tooltip,
+  Text,
+  Center,
+  Stack,
+  Heading,
 } from "@chakra-ui/react";
 import { HiExternalLink } from "react-icons/hi";
 import { FC } from "react";
@@ -17,54 +20,63 @@ type cardData = {
   technology: string[];
   title: string;
   link: string;
+  description: string;
 };
 
 const Card: FC<cardData> = (props) => {
   return (
-    <Flex p={50} w="full" alignItems="center" justifyContent="center">
+    <Center py={6}>
       <Box
-        bg={useColorModeValue("white", "gray.800")}
-        maxW="sm"
-        borderWidth="1px"
-        rounded="lg"
-        shadow="lg"
-        position="relative"
+        maxW={"445px"}
+        w={"full"}
+        bg={useColorModeValue("white", "gray.900")}
+        boxShadow={"2xl"}
+        rounded={"md"}
+        p={6}
+        overflow={"hidden"}
       >
-        <Image
-          height={220}
-          width={"full"}
-          src={props.image}
-          alt={`Picture of ${props.title}`}
-          roundedTop="lg"
-        />
-
-        <Box p="6">
-          <Box d="flex" alignItems="baseline">
+        <Box
+          h={"210px"}
+          bg={"gray.100"}
+          mt={-6}
+          mx={-6}
+          mb={6}
+          pos={"relative"}
+        >
+          <Image
+            height={"100%"}
+            width={"100%"}
+            src={props.image}
+            layout={"fill"}
+            alt={`Screen of ${props.title}`}
+          />
+        </Box>
+        <Stack>
+          <Box>
             {props.technology.map((tech) => {
               return (
                 <Badge
-                  m="2"
+                  mr={1}
+                  key={tech}
                   rounded="full"
                   px="2"
                   fontSize="0.8em"
                   colorScheme="red"
-                  key={tech}
                 >
                   {tech}
                 </Badge>
               );
             })}
           </Box>
-          <Flex mt="1" justifyContent="space-between" alignContent="center">
-            <Box
-              fontSize="2xl"
-              fontWeight="semibold"
-              as="h4"
-              lineHeight="tight"
-              isTruncated
-            >
-              {props.title}
-            </Box>
+          <Heading
+            color={useColorModeValue("gray.700", "white")}
+            fontSize={"2xl"}
+            fontFamily={"body"}
+          >
+            {props.title}
+          </Heading>
+          <Text color={"gray.500"}>{props.description}</Text>
+          <Flex mt="1" justifyContent="center" alignContent="center">
             <Tooltip
               label="View page"
               bg="white"
@@ -72,14 +84,14 @@ const Card: FC<cardData> = (props) => {
               color={"gray.800"}
               fontSize={"1.2em"}
             >
-              <Link href={props.link} display={"flex"} isExternal>
+              <Link href={"#"} display={"flex"}>
                 <Icon as={HiExternalLink} h={7} w={7} alignSelf={"center"} />
               </Link>
             </Tooltip>
           </Flex>
-        </Box>
+        </Stack>
       </Box>
-    </Flex>
+    </Center>
   );
 };
 
