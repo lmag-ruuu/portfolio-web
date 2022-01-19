@@ -15,6 +15,15 @@ import {
 import { HiExternalLink } from "react-icons/hi";
 import { FC } from "react";
 
+const colors: any = {
+  html: "orange",
+  css: "blue",
+  javascript: "yellow",
+  nextjs: "gray",
+  chakra: "cyan",
+  typescript: "teal",
+};
+
 type cardData = {
   image: string;
   technology: string[];
@@ -61,7 +70,7 @@ const Card: FC<cardData> = (props) => {
                   rounded="full"
                   px="2"
                   fontSize="0.8em"
-                  colorScheme="red"
+                  colorScheme={colors[tech]}
                 >
                   {tech}
                 </Badge>
@@ -78,13 +87,13 @@ const Card: FC<cardData> = (props) => {
           <Text color={"gray.500"}>{props.description}</Text>
           <Flex mt="1" justifyContent="center" alignContent="center">
             <Tooltip
-              label="View page"
+              label="Visit page"
               bg="white"
               placement={"top"}
               color={"gray.800"}
               fontSize={"1.2em"}
             >
-              <Link href={"#"} display={"flex"}>
+              <Link href={props.link} isExternal>
                 <Icon as={HiExternalLink} h={7} w={7} alignSelf={"center"} />
               </Link>
             </Tooltip>
