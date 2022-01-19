@@ -18,10 +18,10 @@ type ContainerLayoutProps = {
 };
 
 const ContainerLayout = ({
-  maxW = "container.xl",
+  maxW = "100vw",
   children,
 }: ContainerLayoutProps) => {
-  const { colorMode, setColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   return (
     <VStack spacing={4} align="stretch">
       <Head>

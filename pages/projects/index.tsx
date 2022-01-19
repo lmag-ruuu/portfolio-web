@@ -1,136 +1,69 @@
-import { ReactNode } from "react";
 import {
-  Stack,
-  Container,
   Box,
-  Flex,
-  Text,
-  Heading,
+  Container,
   SimpleGrid,
+  useColorMode,
+  Heading,
+  Text,
 } from "@chakra-ui/react";
+import { FC } from "react";
+import Card from "../../components/cardProjects/CardProject";
 
-export default function Projects() {
+const ProjectSection: FC = () => {
+  const { colorMode } = useColorMode();
+  const bgCol = colorMode === "dark" ? "#181818" : "#e1e0e0";
   return (
-    <Box bg={"gray.800"} position={"relative"}>
-      <Flex
-        flex={1}
-        zIndex={0}
-        display={{ base: "none", lg: "flex" }}
-        backgroundImage="url('/templates/stats-grid-with-image.png')"
-        backgroundSize={"cover"}
-        backgroundPosition="center"
-        backgroundRepeat="no-repeat"
-        position={"absolute"}
-        width={"50%"}
-        insetY={0}
-        right={0}
-      >
-        <Flex
-          bgGradient={"linear(to-r, gray.800 10%, transparent)"}
-          w={"full"}
-          h={"full"}
-        />
-      </Flex>
-      <Container maxW={"7xl"} zIndex={10} position={"relative"}>
-        <Stack direction={{ base: "column", lg: "row" }}>
-          <Stack
-            flex={1}
-            color={"gray.400"}
-            justify={{ lg: "center" }}
-            py={{ base: 4, md: 20, xl: 60 }}
-          >
-            <Box mb={{ base: 8, md: 20 }}>
-              <Text
-                fontFamily={"heading"}
-                fontWeight={700}
-                textTransform={"uppercase"}
-                mb={3}
-                fontSize={"xl"}
-                color={"gray.500"}
-              >
-                Technology
-              </Text>
-              <Heading
-                color={"white"}
-                mb={5}
-                fontSize={{ base: "3xl", md: "5xl" }}
-              >
-                21st century agriculture
-              </Heading>
-              <Text fontSize={"xl"} color={"gray.400"}>
-                The NewLife™ technology allows you to monitor your crops and get
-                complete insights at real time. The proprietary
-                software/hardware ecosystem prevents your plants from getting
-                neglected.
-              </Text>
-            </Box>
-
-            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-              {stats.map((stat) => (
-                <Box key={stat.title}>
-                  <Text
-                    fontFamily={"heading"}
-                    fontSize={"3xl"}
-                    color={"white"}
-                    mb={3}
-                  >
-                    {stat.title}
-                  </Text>
-                  <Text fontSize={"xl"} color={"gray.400"}>
-                    {stat.content}
-                  </Text>
-                </Box>
-              ))}
-            </SimpleGrid>
-          </Stack>
-          <Flex flex={1} />
-        </Stack>
-      </Container>
-    </Box>
+    <Container maxW={"7xl"} p="0 12 12 12" bgColor={bgCol}>
+      <Box p={12}>
+        <Heading textAlign={"center"} mb={4}>
+          My projects
+        </Heading>
+        <Text fontSize="2xl">
+          These are some works that I have done to be able to share the things
+          that I am able to do, there are some that I have not shown here, that
+          are in my codepen and also in my github.
+        </Text>
+        <SimpleGrid minChildWidth="260px" spacing="40px" mt={12}>
+          <Card
+            image={"https://i.imgur.com/jApRUrc.png"}
+            technology={["HTMl", "CSS", "JavaScript"]}
+            title={"PokeSearch"}
+            link={"https://lmag-pokesearch.netlify.app/"}
+          />
+          <Card
+            image={"https://i.imgur.com/jApRUrc.png"}
+            technology={["HTMl", "CSS", "JavaScript"]}
+            title={"PortFolio Fake"}
+            link={"https://lmag-pokesearch.netlify.app/"}
+          />
+          <Card
+            image={"https://i.imgur.com/jApRUrc.png"}
+            technology={["HTMl", "CSS", "JavaScript"]}
+            title={"Omnifood"}
+            link={"https://lmag-pokesearch.netlify.app/"}
+          />
+          <Card
+            image={"https://i.imgur.com/jApRUrc.png"}
+            technology={["HTMl", "CSS", "JavaScript"]}
+            title={"Portfolio"}
+            link={"https://lmag-pokesearch.netlify.app/"}
+          />
+          <Card
+            image={"https://i.imgur.com/jApRUrc.png"}
+            technology={["HTMl", "CSS", "JavaScript"]}
+            title={"Meetups"}
+            link={"https://lmag-pokesearch.netlify.app/"}
+          />
+          <Card
+            image={"https://i.imgur.com/jApRUrc.png"}
+            technology={["HTMl", "CSS", "JavaScript"]}
+            title={"Quotes"}
+            link={"https://lmag-pokesearch.netlify.app/"}
+          />
+        </SimpleGrid>
+      </Box>
+    </Container>
   );
-}
+};
 
-const StatsText = ({ children }: { children: ReactNode }) => (
-  <Text as={"span"} fontWeight={700} color={"white"}>
-    {children}
-  </Text>
-);
-
-const stats = [
-  {
-    title: "10+",
-    content: (
-      <>
-        <StatsText>Software modules</StatsText> for detailed monitoring and
-        real-time analytics
-      </>
-    ),
-  },
-  {
-    title: "24/7",
-    content: (
-      <>
-        <StatsText>Analytics</StatsText> enabled right in your dashboard without
-        history limitations
-      </>
-    ),
-  },
-  {
-    title: "13%",
-    content: (
-      <>
-        <StatsText>Farms</StatsText> in North America has chosen NewLife™ as
-        their management solution
-      </>
-    ),
-  },
-  {
-    title: "250M+",
-    content: (
-      <>
-        <StatsText>Plants</StatsText> currently connected and monitored by the
-        NewLife™ software
-      </>
-    ),
-  },
-];
+export default ProjectSection;
