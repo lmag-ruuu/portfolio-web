@@ -15,7 +15,7 @@ import NavLink from "./NavLink";
 import SwitchTheme from "./SwitchTheme";
 import Link from "next/link";
 
-const Links = ["About", "Projects", "Contact"];
+const Links = ["Home", "About", "Projects"];
 
 export default function WithAction() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -33,20 +33,6 @@ export default function WithAction() {
   return (
     <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-        <Text
-          bgGradient={bGradient}
-          bgClip="text"
-          fontSize="4xl"
-          cursor={"pointer"}
-          _hover={{
-            textDecoration: "none",
-            bgGradient: { bGradientInvert },
-          }}
-        >
-          <Link passHref href="/">
-            Home
-          </Link>
-        </Text>
         <IconButton
           size={"md"}
           icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -57,7 +43,10 @@ export default function WithAction() {
         <HStack spacing={8} alignItems={"center"}>
           <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
             {Links.map((link) => (
-              <NavLink key={link} href={`/${link.toLocaleLowerCase()}`}>
+              <NavLink
+                key={link}
+                href={link === "Home" ? "/" : `/${link.toLowerCase()}`}
+              >
                 {link}
               </NavLink>
             ))}

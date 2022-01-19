@@ -9,7 +9,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { ReactNode } from "react";
 import MyName from "./MyName";
 
@@ -69,9 +69,19 @@ export default function SmallWithSocial() {
             <MyName />
           </Text>
         </Text>
-        <Stack direction={"row"} spacing={6}>
-          <Link href="https://github.com/lmag-ruuu/portfolio-web" isExternal>
+        <Stack direction={"row"} spacing={6} align={"center"}>
+          <Text fontWeight={"700"}>Contact</Text>
+          <Link
+            href="https://www.linkedin.com/in/rub%C3%A9n-perozo-8b72b3200/"
+            isExternal
+          >
+            <FaLinkedin color={iconColor} size={35} />
+          </Link>
+          <Link href="https://github.com/lmag-ruuu/" isExternal>
             <FaGithub color={iconColor} size={35} />
+          </Link>
+          <Link href="https://twitter.com/lmag_ruuu" isExternal>
+            <FaTwitter color={iconColor} size={35} />
           </Link>
         </Stack>
       </Container>
