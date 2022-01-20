@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import {
   Box,
   Flex,
@@ -7,10 +6,9 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
-  Text,
   useColorMode,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import NavLink from "./NavLink";
 import SwitchTheme from "./SwitchTheme";
 import Link from "next/link";
@@ -20,15 +18,6 @@ const Links = ["Home", "About", "Projects"];
 export default function WithAction() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
-  const bGradient =
-    colorMode === "dark"
-      ? "linear(to-l, #1864ab, #4dabf7)"
-      : "linear(to-l, #82c91e, #5c940d)";
-
-  const bGradientInvert =
-    colorMode === "dark"
-      ? "linear(to-l, #4dabf7, #1864ab)"
-      : "linear(to-l, #5c940d, #82c91e)";
 
   return (
     <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
@@ -59,9 +48,12 @@ export default function WithAction() {
 
       {isOpen ? (
         <Box pb={4} display={{ md: "none" }}>
-          <Stack as={"nav"} spacing={4}>
+          <Stack as={"nav"} spacing={4} align={"center"}>
             {Links.map((link) => (
-              <NavLink href={link.toLowerCase()} key={link}>
+              <NavLink
+                href={link === "Home" ? "/" : `/${link.toLowerCase()}`}
+                key={link}
+              >
                 {link}
               </NavLink>
             ))}

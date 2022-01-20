@@ -20,13 +20,7 @@ export default function Home() {
   const paddingTop = isLargerThan767 ? 70 : 0;
   return (
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
-      <Flex
-        pl={"10vh"}
-        pr={"10vh"}
-        flex={1}
-        align={"center"}
-        justify={"center"}
-      >
+      <Flex pl={"1vh"} pr={"1vh"} flex={1} align={"center"} justify={"center"}>
         <Stack spacing={1} w={"full"} maxW={"lg"}>
           <Heading
             fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}

@@ -30,7 +30,7 @@ const AboutMe = () => {
   const justCtn = isLargerThan700 ? "center" : "start";
 
   return (
-    <Container maxW={"7xl"} p="12" bgColor={bgCol}>
+    <Container maxW={"7xl"} bgColor={bgCol}>
       <Heading as="h1">I&apos;ll tell you a little about myself</Heading>
       <Box
         marginTop={{ base: "1", sm: "5" }}
