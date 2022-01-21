@@ -1,6 +1,6 @@
 const Projects = [
   {
-    image: "https://i.imgur.com/jApRUrc.png",
+    image: "/static/pokesearch.webp",
     technology: ["html", "css", "javascript"],
     title: "PokeSearch",
     link: "https://lmag-pokesearch.netlify.app/",
@@ -8,7 +8,7 @@ const Projects = [
       "My first personal project, I was very excited to finish it, it's a pokemon finder that tells you stats about them.",
   },
   {
-    image: "https://i.imgur.com/JBYa9sX.png",
+    image: "/static/fakeportfolio.webp",
     technology: ["html", "css"],
     title: "PortFolio Fake",
     link: "https://codepen.io/lmag-ruu/full/zYEemyv",
@@ -16,7 +16,7 @@ const Projects = [
       "This was my final project for the freecodecamp certificate, it is my favorite project and the one I love the most.",
   },
   {
-    image: "https://i.imgur.com/RpqVgb5.jpg",
+    image: "/static/omnifood.webp",
     technology: ["html", "css", "javascript"],
     title: "Omnifood",
     link: "https://lmagruu-omnifood.netlify.app/",
@@ -24,7 +24,7 @@ const Projects = [
       "One of the final projects done in Jonas' HTML course, is a fake startup food service, was the beginning of everything",
   },
   {
-    image: "https://i.imgur.com/HsVMfpb.jpg",
+    image: "/static/portfolio.webp",
     technology: ["nextjs", "chakra", "typescript"],
     title: "Portfolio",
     link: "https://github.com/lmag-ruuu/portfolio-web",

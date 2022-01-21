@@ -2,7 +2,7 @@ const Certificates = [
   {
     id: "udemyHTML",
     link: "https://www.udemy.com/certificate/UC-54cdd087-7b56-4ddd-990c-ecd54cd5c027/",
-    img: "https://i.imgur.com/N0M5r5K.jpg",
+    img: "/static/RESPONSIVE WEB DESIGN.webp",
     tags: "udemy",
     title: "Responsive Website with HTML &amp; CSS",
     description:
@@ -11,7 +11,7 @@ const Certificates = [
   {
     id: "freecodecampHTML",
     link: "https://www.freecodecamp.org/certification/fcc19390ed1-dc5f-4303-94ce-e310e3348d9c/responsive-web-design",
-    img: "https://i.imgur.com/WQFuhua.png",
+    img: "/static/FCC RESPONSIVE.webp",
     tags: "freecodecamp",
     title: "Responsive Web Design",
     description:
@@ -20,7 +20,7 @@ const Certificates = [
   {
     id: "freecodecampJS",
     link: "https://www.freecodecamp.org/certification/fcc19390ed1-dc5f-4303-94ce-e310e3348d9c/javascript-algorithms-and-data-structures",
-    img: "https://i.imgur.com/9MuP2Eu.png",
+    img: "/static/FCC JAVASCRIPT.webp",
     tags: "freecodecamp",
     title: "JavaScript Algorithms and Data Structures",
     description:
@@ -29,7 +29,7 @@ const Certificates = [
   {
     id: "udemyJS",
     link: "https://www.udemy.com/certificate/UC-be4ea89f-a113-4225-a963-1e65ac8191db/",
-    img: "https://i.imgur.com/7bpf2h7.jpg",
+    img: "/static/REACT CERTIFICATE.webp",
     tags: "udemy",
     title: "React - The Complete Guide",
     description:
