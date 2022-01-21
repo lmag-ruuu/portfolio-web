@@ -46,12 +46,12 @@ const SocialButton = ({
 };
 
 export default function SmallWithSocial() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const iconColor = colorMode === "dark" ? "#1864ab" : "#087f5b";
   const hoverColor = colorMode === "dark" ? "#087f5b" : "#1864ab";
   return (
     <Box
-      bg={useColorModeValue("gray.50", "gray.900")}
+      bg={useColorModeValue("gray.100", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
     >
       <Container

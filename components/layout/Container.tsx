@@ -20,13 +20,7 @@ const ContainerLayout = ({
 }: ContainerLayoutProps) => {
   const { colorMode } = useColorMode();
   return (
-    <VStack
-      spacing={4}
-      align="stretch"
-      bgImage="url('/static/wave-dark.svg')"
-      bgPosition="cover"
-      bgSize="cover"
-    >
+    <VStack spacing={4} align="stretch">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Ruben&apos; Web</title>
