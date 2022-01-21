@@ -24,7 +24,7 @@ const ContainerLayout = ({
 }: ContainerLayoutProps) => {
   const { colorMode } = useColorMode();
   return (
-    <VStack spacing={4} align="stretch">
+    <VStack spacing={4} align="stretch" scrollBehavior={"smooth"}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Ruben&apos; Web</title>

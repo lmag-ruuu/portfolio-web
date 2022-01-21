@@ -48,6 +48,7 @@ const AboutMe = () => {
         display="flex"
         flexDirection={isLargerThan630 ? "column" : "row"}
         justifyContent="space-between"
+        mb={14}
       >
         <Box
           display="flex"
@@ -117,7 +118,7 @@ const AboutMe = () => {
           </Text>
         </Box>
       </Box>
-      <Heading as="h2" marginTop="5">
+      <Heading as="h2" marginTop="5" textAlign={"center"}>
         My achievements
       </Heading>
       <Divider marginTop="5" />

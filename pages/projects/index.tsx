@@ -24,6 +24,7 @@ const ProjectSection: FC = () => {
       maxW={"7xl"}
       bgColor={bgCol}
       pt={6}
+      mb={12}
       borderRadius={"20px"}
     >
       <Heading textAlign={"center"} mb={4}>
