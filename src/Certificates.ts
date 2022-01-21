@@ -4,7 +4,7 @@ const Certificates = [
     link: "https://www.udemy.com/certificate/UC-54cdd087-7b56-4ddd-990c-ecd54cd5c027/",
     img: "/static/RESPONSIVE WEB DESIGN.webp",
     tags: "udemy",
-    title: "Responsive Website with HTML &amp; CSS",
+    title: "Responsive Website with HTML & CSS",
     description:
       "Taught by Jonas Schmedtmann on Udemy was one of my first steps towards becoming a web developer.",
   },

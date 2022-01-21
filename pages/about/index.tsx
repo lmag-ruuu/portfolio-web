@@ -128,6 +128,7 @@ const AboutMe = () => {
             <WrapItem
               key={certificate.id}
               width={{ base: "100%", sm: "45%", md: "45%", lg: "30%" }}
+              p={{ base: "1rem", sm: "4px" }}
             >
               <Box w="100%">
                 <Box borderRadius="lg" overflow="hidden">

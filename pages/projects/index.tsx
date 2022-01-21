@@ -23,8 +23,8 @@ const ProjectSection: FC = () => {
       id="projects"
       maxW={"7xl"}
       bgColor={bgCol}
-      pl={{ base: 0, lg: "3rem" }}
-      pr={{ base: 0, lg: "3rem" }}
+      pl={{ base: "6px", lg: "3rem" }}
+      pr={{ base: "6px", lg: "3rem" }}
       pt={6}
       mb={12}
       borderRadius={"6px"}
