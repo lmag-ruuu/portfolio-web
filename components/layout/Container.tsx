@@ -8,9 +8,7 @@ import {
   VStack,
   useColorMode,
 } from "@chakra-ui/react";
-import { Portal } from "@chakra-ui/react";
-import BackgroundDark from "./BackgroundDark";
-import BackgroundLight from "./BackgroundLight";
+import waveDark from "../../public/static/wave-dark.svg";
 
 type ContainerLayoutProps = {
   children: React.ReactNode;
@@ -23,7 +21,13 @@ const ContainerLayout = ({
 }: ContainerLayoutProps) => {
   const { colorMode } = useColorMode();
   return (
-    <VStack spacing={4} align="stretch">
+    <VStack
+      spacing={4}
+      align="stretch"
+      bgImage="url('/static/wave-dark.svg')"
+      bgPosition="cover"
+      bgSize="cover"
+    >
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Ruben&apos; Web</title>
@@ -31,9 +35,6 @@ const ContainerLayout = ({
       <Navbar />
       <Container maxW={maxW}>{children}</Container>
       <Footer />
-      <Portal>
-        {colorMode === "dark" ? <BackgroundDark /> : <BackgroundLight />}
-      </Portal>
     </VStack>
   );
 };

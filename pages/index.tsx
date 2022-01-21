@@ -67,7 +67,7 @@ export default function Home() {
           boxSize="600px"
           objectFit={"cover"}
           src={"https://i.imgur.com/c29l9om.jpg"}
-          borderRadius={"46% 54% 37% 63% / 80% 68% 32% 20%  "}
+          borderRadius={"16% 84% 3% 97% / 95% 4% 96% 5% "}
         />
       </Flex>
     </Stack>
