@@ -26,14 +26,13 @@ const tagColor: any = {
 const AboutMe = () => {
   const { colorMode } = useColorMode();
   const bgCol = colorMode === "dark" ? "#181818" : "#e1e0e0";
-  const [isLargerThan630] = useMediaQuery("(max-width: 630px)");
+  const [isLargerThan630] = useMediaQuery("(max-width: 633px)");
   const justCtn = isLargerThan630 ? "center" : "start";
 
   return (
     <Container
       id="about"
       maxW={"7xl"}
-      bgColor={bgCol}
       pt={6}
       mt={12}
       mb={12}
