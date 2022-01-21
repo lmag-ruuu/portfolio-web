@@ -113,8 +113,8 @@ const AboutMe = () => {
             fontSize="lg"
           >
             After a year of having fun with programming, I decided to take this
-            career seriously for my whole life and started to study in a more
-            professional way to nurture my knowledge of programming.
+            career seriously for my whole life and started to study 📑 in a more
+            professional way to nurture my knowledge of programming.💻
           </Text>
         </Box>
       </Box>
