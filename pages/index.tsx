@@ -72,7 +72,7 @@ export default function Home() {
           alt={"Magdiel Draw"}
           boxSize="450px"
           objectFit={"cover"}
-          src={"https://i.imgur.com/c29l9om.jpg"}
+          src={"/static/lmagcut.webp"}
           boxShadow={`0 0 10px #343a40`}
           borderRadius={"16% 84% 3% 97% / 95% 4% 96% 5% "}
         />
