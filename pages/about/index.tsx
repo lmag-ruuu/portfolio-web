@@ -93,7 +93,7 @@ const AboutMe = () => {
         >
           <AboutTags tags={["StoryTime"]} bgCol="teal" />
           <Heading marginTop="1">
-            <Text as={"h1"}>Who i am?</Text>
+            <Text as={"h1"}>Who i am ❔</Text>
           </Heading>
           <Text
             as="p"
