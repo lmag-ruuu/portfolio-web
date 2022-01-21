@@ -18,19 +18,16 @@ type ContainerLayoutProps = {
   maxW?: ContainerProps["maxW"];
 };
 
-const ContainerLayout = ({
-  maxW = "100vw",
-  children,
-}: ContainerLayoutProps) => {
+const ContainerLayout = ({ maxW = "100vw" }: ContainerLayoutProps) => {
   const { colorMode } = useColorMode();
   return (
-    <VStack spacing={4} align="stretch" scrollBehavior={"smooth"}>
+    <VStack spacing={4} align="stretch">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Ruben&apos; Web</title>
       </Head>
       <Navbar />
-      <Container maxW={maxW}>
+      <Container maxW={maxW} scrollBehavior={"smooth"}>
         <Home />
         <About />
         <Projects />
