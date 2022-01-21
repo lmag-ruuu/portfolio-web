@@ -35,10 +35,12 @@ const AboutMe = () => {
       maxW={"7xl"}
       bgColor={bgCol}
       pt={6}
+      pl={{ base: 0, lg: "3rem" }}
+      pr={{ base: 0, lg: "3rem" }}
       mt={12}
       mb={12}
       pb={6}
-      borderRadius={"20px"}
+      borderRadius={"6px"}
     >
       <Heading textAlign={"center"} as="h1">
         I&apos;ll tell you a little about myself 😊

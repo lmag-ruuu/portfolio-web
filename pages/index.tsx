@@ -20,7 +20,13 @@ export default function Home() {
   const paddingTop = isLargerThan767 ? 10 : 0;
   return (
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }} id="home">
-      <Flex pl={"1vh"} pr={"1vh"} flex={1} align={"center"} justify={"center"}>
+      <Flex
+        pl={{ base: 0, lg: "3rem" }}
+        pr={{ base: 0, lg: "3rem" }}
+        flex={1}
+        align={"center"}
+        justify={"center"}
+      >
         <Stack spacing={1} w={"full"} maxW={"lg"}>
           <Heading
             fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
@@ -67,6 +73,7 @@ export default function Home() {
           boxSize="450px"
           objectFit={"cover"}
           src={"https://i.imgur.com/c29l9om.jpg"}
+          boxShadow={`0 0 10px #343a40`}
           borderRadius={"16% 84% 3% 97% / 95% 4% 96% 5% "}
         />
       </Flex>
