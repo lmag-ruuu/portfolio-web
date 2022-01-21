@@ -95,7 +95,7 @@ const AboutMe = () => {
         >
           <AboutTags tags={["StoryTime"]} bgCol="teal" />
           <Heading marginTop="1">
-            <Text as={"h1"}>Who i am ❔</Text>
+            <Text as={"h1"}>Who i am ?</Text>
           </Heading>
           <Text
             as="p"
@@ -103,10 +103,10 @@ const AboutMe = () => {
             color={useColorModeValue("gray.700", "gray.200")}
             fontSize="lg"
           >
-            My name is Ruben Magdiel Perozo, I am a baker who loves cooking, in
-            2019, a friend awakened in me a curiosity about programming. By 2020
-            and due to some events that led me to my computer, I started to
-            investigate a world that was more extensive than I thought...
+            My name is Ruben Magdiel Perozo, I am a baker 🍞 who loves cooking,
+            in 2019, a friend awakened in me a curiosity about programming. By
+            2020 and due to some events that led me to my computer, I started to
+            investigate a world that was more extensive than I thought... 😱
           </Text>
           <Text
             as="p"
