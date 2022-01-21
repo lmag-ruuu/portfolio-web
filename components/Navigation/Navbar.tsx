@@ -11,13 +11,11 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import NavLink from "./NavLink";
 import SwitchTheme from "./SwitchTheme";
-import Link from "next/link";
 
 const Links = ["Home", "About", "Projects"];
 
-export default function WithAction() {
+export default function NavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>

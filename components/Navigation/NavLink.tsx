@@ -6,7 +6,7 @@ import {
 import NextLink from "next/link";
 import { FC, ReactNode } from "react";
 
-const Link: FC<{ children: ReactNode; href: string }> = (props) => {
+const NavLink: FC<{ children: ReactNode; href: string }> = (props) => {
   const { colorMode, setColorMode } = useColorMode();
   const darkBtn = {
     textDecoration: "none",
@@ -35,4 +35,4 @@ const Link: FC<{ children: ReactNode; href: string }> = (props) => {
   );
 };
 
-export default Link;
+export default NavLink;
