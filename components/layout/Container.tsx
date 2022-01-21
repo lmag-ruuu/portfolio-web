@@ -8,7 +8,6 @@ import {
   VStack,
   useColorMode,
 } from "@chakra-ui/react";
-import waveDark from "../../public/static/wave-dark.svg";
 
 type ContainerLayoutProps = {
   children: React.ReactNode;

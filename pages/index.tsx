@@ -17,7 +17,7 @@ export default function Home() {
   const color = colorMode === "dark" ? "#1864ab" : "#5c940d";
   const lineColor = colorMode === "dark" ? "#1864ab" : "#5c940d";
   const textColor = colorMode === "dark" ? "#e9ecef" : "#343a40";
-  const paddingTop = isLargerThan767 ? 70 : 0;
+  const paddingTop = isLargerThan767 ? 10 : 0;
   return (
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
       <Flex pl={"1vh"} pr={"1vh"} flex={1} align={"center"} justify={"center"}>
@@ -64,7 +64,7 @@ export default function Home() {
       <Flex flex={1} align={"center"} justify={"center"}>
         <Image
           alt={"Magdiel Draw"}
-          boxSize="600px"
+          boxSize="450px"
           objectFit={"cover"}
           src={"https://i.imgur.com/c29l9om.jpg"}
           borderRadius={"16% 84% 3% 97% / 95% 4% 96% 5% "}
