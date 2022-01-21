@@ -24,7 +24,7 @@ const ContainerLayout = ({ maxW = "100vw" }: ContainerLayoutProps) => {
     <VStack spacing={4} align="stretch">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Ruben&apos; Web</title>
+        <title>Ruben&apos;s Frontend Developer</title>
       </Head>
       <Navbar />
       <Container maxW={maxW} scrollBehavior={"smooth"}>
