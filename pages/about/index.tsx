@@ -26,7 +26,7 @@ const tagColor: any = {
 const AboutMe = () => {
   const { colorMode } = useColorMode();
   const bgCol = colorMode === "dark" ? "#181818" : "#e1e0e0";
-  const [isLargerThan630] = useMediaQuery("(max-width: 633px)");
+  const [isLargerThan630] = useMediaQuery("(max-width: 600px)");
   const justCtn = isLargerThan630 ? "center" : "start";
 
   return (
@@ -46,7 +46,7 @@ const AboutMe = () => {
       <Box
         marginTop={{ base: "1", sm: "5" }}
         display="flex"
-        flexDirection={isLargerThan630 ? "column" : "row"}
+        flexDirection={{ base: "column", lg: "row" }}
         justifyContent="space-between"
         mb={14}
       >
