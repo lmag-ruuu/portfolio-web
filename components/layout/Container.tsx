@@ -9,6 +9,10 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 
+import Home from "../../pages/index";
+import About from "../../pages/about/index";
+import Projects from "../../pages/projects/index";
+
 type ContainerLayoutProps = {
   children: React.ReactNode;
   maxW?: ContainerProps["maxW"];
@@ -26,7 +30,11 @@ const ContainerLayout = ({
         <title>Ruben&apos; Web</title>
       </Head>
       <Navbar />
-      <Container maxW={maxW}>{children}</Container>
+      <Container maxW={maxW}>
+        <Home />
+        <About />
+        <Projects />
+      </Container>
       <Footer />
     </VStack>
   );

@@ -26,16 +26,27 @@ const tagColor: any = {
 const AboutMe = () => {
   const { colorMode } = useColorMode();
   const bgCol = colorMode === "dark" ? "#181818" : "#e1e0e0";
-  const [isLargerThan700] = useMediaQuery("(max-width: 700px)");
-  const justCtn = isLargerThan700 ? "center" : "start";
+  const [isLargerThan630] = useMediaQuery("(max-width: 630px)");
+  const justCtn = isLargerThan630 ? "center" : "start";
 
   return (
-    <Container maxW={"7xl"} bgColor={bgCol} pt={6}>
-      <Heading as="h1">I&apos;ll tell you a little about myself</Heading>
+    <Container
+      id="about"
+      maxW={"7xl"}
+      bgColor={bgCol}
+      pt={6}
+      mt={12}
+      mb={12}
+      pb={6}
+      borderRadius={"20px"}
+    >
+      <Heading textAlign={"center"} as="h1">
+        I&apos;ll tell you a little about myself
+      </Heading>
       <Box
         marginTop={{ base: "1", sm: "5" }}
         display="flex"
-        flexDirection={isLargerThan700 ? "column" : "row"}
+        flexDirection={isLargerThan630 ? "column" : "row"}
         justifyContent="space-between"
       >
         <Box

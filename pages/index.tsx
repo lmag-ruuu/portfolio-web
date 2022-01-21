@@ -19,7 +19,7 @@ export default function Home() {
   const textColor = colorMode === "dark" ? "#e9ecef" : "#343a40";
   const paddingTop = isLargerThan767 ? 10 : 0;
   return (
-    <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
+    <Stack minH={"100vh"} direction={{ base: "column", md: "row" }} id="home">
       <Flex pl={"1vh"} pr={"1vh"} flex={1} align={"center"} justify={"center"}>
         <Stack spacing={1} w={"full"} maxW={"lg"}>
           <Heading

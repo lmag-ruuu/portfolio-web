@@ -19,7 +19,13 @@ const ProjectSection: FC = () => {
   const { colorMode } = useColorMode();
   const bgCol = colorMode === "dark" ? "#181818" : "#e1e0e0";
   return (
-    <Container maxW={"7xl"} bgColor={bgCol} pt={6}>
+    <Container
+      id="projects"
+      maxW={"7xl"}
+      bgColor={bgCol}
+      pt={6}
+      borderRadius={"20px"}
+    >
       <Heading textAlign={"center"} mb={4}>
         My projects
       </Heading>

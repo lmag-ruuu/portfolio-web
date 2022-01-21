@@ -32,10 +32,7 @@ export default function WithAction() {
         <HStack spacing={8} alignItems={"center"}>
           <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
             {Links.map((link) => (
-              <NavLink
-                key={link}
-                href={link === "Home" ? "/" : `/${link.toLowerCase()}`}
-              >
+              <NavLink key={link} href={`#${link.toLowerCase()}`}>
                 {link}
               </NavLink>
             ))}
@@ -50,10 +47,7 @@ export default function WithAction() {
         <Box pb={4} display={{ md: "none" }}>
           <Stack as={"nav"} spacing={4} align={"center"}>
             {Links.map((link) => (
-              <NavLink
-                href={link === "Home" ? "/" : `/${link.toLowerCase()}`}
-                key={link}
-              >
+              <NavLink href={`#${link.toLowerCase()}`} key={link}>
                 {link}
               </NavLink>
             ))}
