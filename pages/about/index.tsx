@@ -33,6 +33,7 @@ const AboutMe = () => {
     <Container
       id="about"
       maxW={"7xl"}
+      bgColor={bgCol}
       pt={6}
       mt={12}
       mb={12}
