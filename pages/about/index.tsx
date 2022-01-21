@@ -65,13 +65,11 @@ const AboutMe = () => {
             marginLeft={{ base: "0", sm: "5%" }}
             marginTop="5%"
           >
-            <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-              <Image
-                src={boySvg}
-                alt="some good alt text"
-                objectFit="contain"
-              />
-            </Link>
+            <Image
+              src={boySvg}
+              alt="drawing of a person on his computer"
+              objectFit="contain"
+            />
           </Box>
           <Box zIndex="1" width="100%" position="absolute" height="100%">
             <Box
