@@ -17,7 +17,7 @@ const ProjectSection: FC = () => {
   const [isLargerThan1120] = useMediaQuery("(max-width: 1120px)");
   const justCtn = isLargerThan1120 ? "center" : "start";
   const { colorMode } = useColorMode();
-  const bgCol = colorMode === "dark" ? "#181818" : "#e1e0e0";
+  const bgCol = colorMode === "dark" ? "#181818" : "#f8f9fa";
   return (
     <Container
       id="projects"
