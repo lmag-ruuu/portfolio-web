@@ -41,7 +41,7 @@ const AboutMe = () => {
       borderRadius={"20px"}
     >
       <Heading textAlign={"center"} as="h1">
-        I&apos;ll tell you a little about myself
+        I&apos;ll tell you a little about myself 😊
       </Heading>
       <Box
         marginTop={{ base: "1", sm: "5" }}
