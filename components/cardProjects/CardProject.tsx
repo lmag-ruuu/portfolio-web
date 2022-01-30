@@ -22,6 +22,7 @@ const colors: any = {
   nextjs: "gray",
   chakra: "cyan",
   typescript: "teal",
+  "material-ui": "blue",
 };
 
 type cardData = {
