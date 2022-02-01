@@ -7,6 +7,7 @@ import {
   useBreakpointValue,
   useColorMode,
   useMediaQuery,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 
 import Technologies from "../components/componentsHome/Technologies";
@@ -65,6 +66,18 @@ export default function Home() {
             believe it or not, I like javascript.
           </Text>
           <Technologies />
+          <ChakraLink
+            href="/static/cv-ruben-magdiel.pdf"
+            download={"CV RUBEN ESP"}
+          >
+            Dowload CV (ESP)
+          </ChakraLink>
+          <ChakraLink
+            href="/static/cv-ruben-magdiel-ENG.pdf"
+            download={"CV RUBEN ENG"}
+          >
+            Dowload CV (ENG)
+          </ChakraLink>
         </Stack>
       </Flex>
       <Flex flex={1} align={"center"} justify={"center"}>
