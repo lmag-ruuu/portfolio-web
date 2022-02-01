@@ -15,6 +15,8 @@ import DowloadBar from "../components/DowloadBar/dowloadBar";
 
 export default function Home() {
   const [isLargerThan767] = useMediaQuery("(max-width: 767px)");
+  const [isLargerThan479] = useMediaQuery("(max-width: 479px)");
+
   const { colorMode } = useColorMode();
   const color = colorMode === "dark" ? "#1864ab" : "#5c940d";
   const lineColor = colorMode === "dark" ? "#1864ab" : "#5c940d";
@@ -78,8 +80,8 @@ export default function Home() {
       </Flex>
       <Flex flex={1} align={"center"} justify={"center"}>
         <Image
-          mt={{ base: 0, sm: 8 }}
-          ml={{ base: 0, md: 8 }}
+          mt={{ base: isLargerThan479 ? 8 : 0, sm: 8 }}
+          ml={{ base: 0, md: 12 }}
           alt={"Magdiel Draw"}
           boxSize="450px"
           objectFit={"cover"}
