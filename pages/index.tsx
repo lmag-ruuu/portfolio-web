@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 
 import Technologies from "../components/componentsHome/Technologies";
+import DowloadBar from "../components/DowloadBar/dowloadBar";
 
 export default function Home() {
   const [isLargerThan767] = useMediaQuery("(max-width: 767px)");
@@ -19,6 +20,12 @@ export default function Home() {
   const lineColor = colorMode === "dark" ? "#1864ab" : "#5c940d";
   const textColor = colorMode === "dark" ? "#e9ecef" : "#343a40";
   const paddingTop = isLargerThan767 ? 10 : 0;
+
+  const cvItems = [
+    { name: "CV Ruben ENG", path: "/static/cv-ruben-magdiel-ENG.pdf" },
+    { name: "CV Ruben ESP", path: "/static/cv-ruben-magdiel.pdf" },
+  ];
+
   return (
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }} id="home">
       <Flex
@@ -66,22 +73,13 @@ export default function Home() {
             believe it or not, I like javascript.
           </Text>
           <Technologies />
-          <ChakraLink
-            href="/static/cv-ruben-magdiel.pdf"
-            download={"CV RUBEN ESP"}
-          >
-            Dowload CV (ESP)
-          </ChakraLink>
-          <ChakraLink
-            href="/static/cv-ruben-magdiel-ENG.pdf"
-            download={"CV RUBEN ENG"}
-          >
-            Dowload CV (ENG)
-          </ChakraLink>
+          <DowloadBar file={cvItems} />
         </Stack>
       </Flex>
       <Flex flex={1} align={"center"} justify={"center"}>
         <Image
+          mt={{ base: 0, sm: 8 }}
+          ml={{ base: 0, md: 8 }}
           alt={"Magdiel Draw"}
           boxSize="450px"
           objectFit={"cover"}
