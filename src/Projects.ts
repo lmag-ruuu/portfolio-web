@@ -8,6 +8,14 @@ const Projects = [
       "My personal portfolio, I used chakraui and nextjs, I had a lot of fun and focus my knowledge on the front end.",
   },
   {
+    image: "/static/geritch.webp",
+    technology: ["nextjs", "css", "typescript"],
+    title: "Geritch Restorant",
+    link: "https://restofood.vercel.app/",
+    description:
+      "A Web for a fake restorant, i use nextjs and module.css for recreate this design, the hardest part was use next/image component cuz treath different to images.",
+  },
+  {
     image: "/static/great-quotes.webp",
     technology: ["nextjs", "typescript", "material-ui"],
     title: "Quotes",
