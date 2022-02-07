@@ -8,6 +8,14 @@ const Projects = [
       "My personal portfolio, I used chakraui and nextjs, I had a lot of fun and focus my knowledge on the front end.",
   },
   {
+    image: "/static/cryptoverse.webp",
+    technology: ["react", "antd", "typescript"],
+    title: "Crypto Verse",
+    link: "https://cryptoverse-magruu.netlify.app/",
+    description:
+      "demo App to search for crypto news, statistics and cryptocurrency news",
+  },
+  {
     image: "/static/geritch.webp",
     technology: ["nextjs", "css", "typescript"],
     title: "Geritch Restorant",
