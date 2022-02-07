@@ -23,6 +23,8 @@ const colors: any = {
   chakra: "cyan",
   typescript: "teal",
   "material-ui": "blue",
+  react: "blue",
+  antd: "red",
 };
 
 type cardData = {

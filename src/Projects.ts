@@ -13,7 +13,7 @@ const Projects = [
     title: "Crypto Verse",
     link: "https://cryptoverse-magruu.netlify.app/",
     description:
-      "demo App to search for crypto news, statistics and cryptocurrency news",
+      "Demo App to search for cryptocurrencies, view statistics and look for specific crypto news",
   },
   {
     image: "/static/geritch.webp",
