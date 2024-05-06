@@ -23,8 +23,7 @@ export default function Home() {
   const paddingTop = isLargerThan767 ? 10 : 0;
 
   const cvItems = [
-    { name: "CV Ruben ENG", path: "/static/cv-ruben-magdiel-ENG.pdf" },
-    { name: "CV Ruben ESP", path: "/static/cv-ruben-magdiel.pdf" },
+    { name: "CV Ruben Magdiel", path: "/static/magdiel-cv.pdf" },
   ];
 
   return (
