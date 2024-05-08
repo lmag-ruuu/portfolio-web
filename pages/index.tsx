@@ -6,8 +6,7 @@ import {
   Text,
   useBreakpointValue,
   useColorMode,
-  useMediaQuery,
-  Link as ChakraLink,
+  useMediaQuery
 } from "@chakra-ui/react";
 
 import Technologies from "../components/componentsHome/Technologies";
@@ -59,7 +58,7 @@ export default function Home() {
             </Text>
             <br />{" "}
             <Text fontSize={28} color={color} as={"span"}>
-              A self-taught frontend developer
+              A frontend developer
             </Text>{" "}
           </Heading>
           <Text
@@ -67,10 +66,9 @@ export default function Home() {
             fontSize={{ base: "md", lg: "lg" }}
             color={textColor}
           >
-            I am a very passionate person, I like music, video games,
+            I am a shy person, I like music, video games,
             programming, pokémon, I am someone curious who is always learning
-            something new, I do web development with react, typescript and
-            believe it or not, I like javascript.
+            something new, I do web development with react, typescript.
           </Text>
           <Technologies />
           <DowloadBar file={cvItems} />

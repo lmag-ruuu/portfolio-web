@@ -26,7 +26,7 @@ const tagColor: any = {
 const AboutMe = () => {
   const { colorMode } = useColorMode();
   const bgCol = colorMode === "dark" ? "#181818" : "#f8f9fa";
-  const [isLargerThan630] = useMediaQuery("(max-width: 600px)");
+  const [isLargerThan630] = useMediaQuery("(max-width: 619px)");
   const justCtn = isLargerThan630 ? "center" : "start";
 
   return (
@@ -101,8 +101,8 @@ const AboutMe = () => {
             color={useColorModeValue("gray.700", "gray.200")}
             fontSize="lg"
           >
-            My name is Ruben Magdiel Perozo, I am a baker 🍞 who loves cooking,
-            in 2019, a friend awakened in me a curiosity about programming. By
+            My name is Ruben Magdiel, I am a baker 🍞 who loves cooking,
+            in 2017, a friend awakened in me a curiosity about programming. By
             2020 and due to some events that led me to my computer, I started to
             investigate a world that was more extensive than I thought... 😱
           </Text>

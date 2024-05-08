@@ -5,13 +5,13 @@ import Head from "next/head";
 import {
   Container,
   ContainerProps,
-  VStack,
-  useColorMode,
+  VStack
 } from "@chakra-ui/react";
 
 import Home from "../../pages/index";
 import About from "../../pages/about/index";
 import Projects from "../../pages/projects/index";
+import Experience from "../../pages/experience";
 
 type ContainerLayoutProps = {
   children: React.ReactNode;
@@ -19,7 +19,6 @@ type ContainerLayoutProps = {
 };
 
 const ContainerLayout = ({ maxW = "100vw" }: ContainerLayoutProps) => {
-  const { colorMode } = useColorMode();
   return (
     <VStack spacing={4} align="stretch">
       <Head>
@@ -29,6 +28,7 @@ const ContainerLayout = ({ maxW = "100vw" }: ContainerLayoutProps) => {
       <Navbar />
       <Container maxW={maxW} scrollBehavior={"smooth"}>
         <Home />
+        <Experience />
         <About />
         <Projects />
       </Container>

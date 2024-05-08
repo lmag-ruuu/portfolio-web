@@ -37,7 +37,7 @@ type cardData = {
 
 const Card: FC<cardData> = (props) => {
   return (
-    <Center py={6}>
+    <Center py={6} height={"100%"}>
       <Box
         maxW={"445px"}
         w={"full"}
@@ -46,6 +46,7 @@ const Card: FC<cardData> = (props) => {
         rounded={"md"}
         p={6}
         overflow={"hidden"}
+        h="full"
       >
         <Box
           h={"210px"}
@@ -59,7 +60,6 @@ const Card: FC<cardData> = (props) => {
             height={"100%"}
             width={"100%"}
             src={props.image}
-            layout={"fill"}
             alt={`Screen of ${props.title}`}
           />
         </Box>

@@ -15,7 +15,6 @@ import Projects from "../../src/Projects";
 
 const ProjectSection: FC = () => {
   const [isLargerThan1120] = useMediaQuery("(max-width: 1120px)");
-  const justCtn = isLargerThan1120 ? "center" : "start";
   const { colorMode } = useColorMode();
   const bgCol = colorMode === "dark" ? "#181818" : "#f8f9fa";
   return (
@@ -45,12 +44,17 @@ const ProjectSection: FC = () => {
         </Text>
       </Box>
       <Divider marginTop="5" />
-      <Wrap spacing="30px" marginTop="5" justify={justCtn}>
+      <Box
+        marginTop="5"
+        display={"grid"}
+        gridTemplateColumns={"repeat(auto-fit, minmax(min(100%, 375px), 1fr))"}
+        gap={4}
+      >
         {Projects.map((project) => {
           return (
-            <WrapItem
+            <Box
               key={project.title}
-              width={{ base: "100%", sm: "45%", md: "45%", lg: "30%" }}
+              height={"100%"}
             >
               <Card
                 image={project.image}
@@ -59,10 +63,10 @@ const ProjectSection: FC = () => {
                 link={project.link}
                 description={project.description}
               />
-            </WrapItem>
+            </Box>
           );
         })}
-      </Wrap>
+      </Box>
     </Container>
   );
 };
