@@ -24,22 +24,6 @@ const Projects = [
       "A Web for a fake restorant, i use nextjs and module.css for recreate this design, the hardest part was use next/image component cuz treath different to images.",
   },
   {
-    image: "/static/great-quotes.webp",
-    technology: ["nextjs", "typescript", "material-ui"],
-    title: "Quotes",
-    link: "https://great-quotes-omega.vercel.app/",
-    description:
-      "An app to add quotes and comment them, for this one I used mongodb, nextjs, material-ui and typescript, it was really a challenge, I have very little knowledge with mongodb.",
-  },
-  {
-    image: "/static/meetups.webp",
-    technology: ["typescript", "nextjs", "css"],
-    title: "Meetups",
-    link: "https://nextjs-meetup-demo-five.vercel.app/",
-    description:
-      "A small application for adding and viewing descriptions of well-known places. My first look with nextjs.",
-  },
-  {
     image: "/static/pokesearch.webp",
     technology: ["html", "css", "javascript"],
     title: "PokeSearch",
