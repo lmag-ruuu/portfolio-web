@@ -20,7 +20,7 @@ export default function NavBar() {
     <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
         <IconButton
-          size={{ base: "sm", md: "md" }}
+          size={"sm"}
           icon={isOpen ? <CloseIcon color={"gray.900"} /> : <HamburgerIcon color={"gray.900"} />}
           aria-label={"Open Menu"}
           display={{ md: "none" }}
