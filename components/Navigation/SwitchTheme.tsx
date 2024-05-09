@@ -8,7 +8,7 @@ const SwitchTheme: FC = () => {
   return (
     <Flex>
       <IconButton
-      size={{ base: "sm", md: "md"}}
+      size={"sm"}
         onClick={toggleColorMode}
         aria-label="Swith theme"
         icon={isDark ? <SunIcon color={"#000"} /> : <MoonIcon />}
