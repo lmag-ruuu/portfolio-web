@@ -11,7 +11,7 @@ const SwitchTheme: FC = () => {
       size={"sm"}
         onClick={toggleColorMode}
         aria-label="Swith theme"
-        icon={isDark ? <SunIcon color={"#000"} /> : <MoonIcon color={"#FFF"} />}
+        icon={isDark ? <SunIcon color={"#FFF"} /> : <MoonIcon color={"#000"} />}
       />
     </Flex>
   );
