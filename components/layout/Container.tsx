@@ -29,8 +29,8 @@ const ContainerLayout = ({ maxW = "100vw" }: ContainerLayoutProps) => {
       <Container maxW={maxW} scrollBehavior={"smooth"}>
         <Home />
         <Experience />
-        <About />
         <Projects />
+        <About />
       </Container>
       <Footer />
     </VStack>

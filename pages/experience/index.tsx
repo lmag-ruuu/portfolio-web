@@ -21,11 +21,11 @@ const Experience = () => {
   const { colorMode } = useColorMode();
   const bgCol = colorMode === "dark" ? "#181818" : "#f8f9fa";
   const [isLargerThan630] = useMediaQuery("(max-width: 600px)");
-  const justCtn = isLargerThan630 ? "center" : "start";
+
 
   return (
     <Container
-      id="about"
+      id="experience"
       maxW={"7xl"}
       bgColor={bgCol}
       pt={6}
