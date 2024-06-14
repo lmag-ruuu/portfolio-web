@@ -5,9 +5,6 @@ import {
   Link,
   Text,
   Divider,
-  Wrap,
-  Img,
-  WrapItem,
   useColorMode,
   useColorModeValue,
   Container,
@@ -111,7 +108,7 @@ const Experience = () => {
               color={useColorModeValue("gray.700", "gray.200")}
               fontSize="lg"
             >
-              From November 2021 to April 2023
+              From January 2020 to April 2022
             </Text>
           </Box>
           <Box
@@ -142,7 +139,7 @@ const Experience = () => {
               color={useColorModeValue("gray.700", "gray.200")}
               fontSize="lg"
             >
-              From April 2023 to May 2024
+              From May 2022 to May 2024
             </Text>
           </Box>
         </Box>
