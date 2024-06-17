@@ -101,7 +101,7 @@ const AboutMe = () => {
             color={useColorModeValue("gray.700", "gray.200")}
             fontSize="lg"
           >
-            My name is Ruben Magdiel, I am a baker 🍞 who loves cooking, a passionate programmer with over 5 of experience in software development. I've had the opportunity to work on various projects for local businesses, such as gyms and retail stores, as well as state-level applications.
+            My name is Ruben Magdiel, I am a baker 🍞 who loves cooking, a passionate programmer with over 5 of experience in software development. I&apos;ve had the opportunity to work on various projects for local businesses, such as gyms and retail stores, as well as state-level applications.
           </Text>
           <Text
             as="p"
@@ -109,7 +109,7 @@ const AboutMe = () => {
             color={useColorModeValue("gray.700", "gray.200")}
             fontSize="lg"
           >
-           In 2020, I joined a software consulting firm where I developed my skills in some stacks like MERN and MEAN, Mobile, etc. In 2022, I joined a startup where I applied my knowledge in NextJs. I'm excited to share my experience and expertise with other programmers and companies.
+           In 2020, I joined a software consulting firm where I developed my skills in some stacks like MERN and MEAN, Mobile, etc. In 2022, I joined a startup where I applied my knowledge in NextJs. I&apos;m excited to share my experience and expertise with other programmers and companies.
           </Text>
         </Box>
       </Box>
